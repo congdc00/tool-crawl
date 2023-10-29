@@ -56,6 +56,8 @@ def get_action(info_video, info_log_path):
         is_new = True
         for content in dictionary:
             if content["url"] == info_video["url"]:
+                is_new = False
+
                 if is_new == False:
                 # checkdel
                     for i in range(len(content)-1):
@@ -63,20 +65,21 @@ def get_action(info_video, info_log_path):
                         section = content[f"section_{i:02d}"]
                         section_start = section[0]
                         section_end = section[1]
-                    for j, info_section in enumerate( info_video["sections"]):
-                        s_start = info_section[0]
-                        s_end = info_section[1]
-                        if section_start == s_start and section_end == s_end:
-                            # check reindex
-                            if i != j:
-                                index_sections_root.append(i)
-                                index_sections_target.append(j)
-                            elif i == j:
-                                skip_split.append(i)
+                        for j, info_section in enumerate( info_video["sections"]):
+                            s_start = info_section[0]
+                            s_end = info_section[1]
+                            if section_start == s_start and section_end == s_end:
+                                # check reindex
+                                if i != j:
+                                    index_sections_root.append(i)
+                                    index_sections_target.append(j)
+                                elif i == j:
+                                    skip_split.append(i)
+                                is_del = False
+                                break
 
-                            is_del = False
-                    if is_del:
-                        index_sections_del.append(i)
+                        if is_del:
+                            index_sections_del.append(i)
 
                 # check create section
                 for i, info_section in enumerate(info_video["sections"]):
