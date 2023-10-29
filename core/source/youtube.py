@@ -1,4 +1,3 @@
-import requests
 from yt_dlp import YoutubeDL
 import time
 
