@@ -10,7 +10,7 @@ def download_video (video_url, target_path):
     format = list_tmp[2]
     ydl_opts = {
         "quiet": True,
-        "format": "bestvideo[ext=mp4]+bestaudio[ext=mp3]/best", #format,
+        "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best", #format,
         "outtmpl": f"{output_path}.%(ext)s",
         "restrictfilenames": True,
     }
