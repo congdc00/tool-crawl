@@ -57,7 +57,7 @@ if __name__ == "__main__":
                 delta_time = time_end - time_start
                 total_time = total_time + delta_time
         total_time = str(total_time)
-        json.dump(f"Time video: {total_time.split(' ')[-1]}", f) 
+        logger.info(f"Time video: {total_time.split(' ')[-1]}")
     
     end_time = time.time()
     runtime = end_time - start_time
