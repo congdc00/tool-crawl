@@ -1,1 +1,5 @@
 video_source/
+log/
+data/
+.mypy_cache/
+__pycache__/

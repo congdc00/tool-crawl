@@ -1,0 +1,15 @@
+{
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=DujM57DP4u4",
+      "sections": [
+        ["00:05:33", "00:05:34"]
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RU_FrFfkJec",
+      "sections": [
+      ] 
+    }
+  ]
+}
