@@ -1,6 +1,6 @@
 video_source/
 log/
-!./core/log/
+!core/log/
 data/
 .mypy_cache/
 __pycache__/
