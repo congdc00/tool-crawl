@@ -25,7 +25,8 @@ def del_sections(video_root_path, index_sections):
     tmp = video_root_path.split(".")
     for index_section in index_sections:
         video_target_path = f".{tmp[1]}_{index_section:02d}.{tmp[2]}"
-        os.remove(video_target_path)
+        if os.path.exists(video_target_path):
+            os.remove(video_target_path)
         Logger.write_log(f"[Change] Delete {video_target_path}")
 
 def reindex(video_root_path, index_sections_root, index_sections_target):
