@@ -1,0 +1,51 @@
+{
+  "video": [
+    {
+      "url": "https://www.youtube.com/watch?v=qxxUhy-9M_g",
+      "sections":[
+        ["00:00:07", "00:00:25"],
+        ["00:03:44", "00:04:01"]
+      ],
+      "info":{
+        "gender": "female",
+        "type_voice": "north"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KgcToizd848",
+      "sections":[
+        ["00:00:08", "00:00:25"],
+        ["00:11:24", "00:00:41"]
+      ],
+      "info": {
+        "gender": "female",
+        "type_voice": "north"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NmJpBBdF58E",
+      "sections": [
+        ["00:00:09", "00:00:19"],
+        ["00:10:35", "00:10:50"]
+      ],
+      "info": {
+        "gender": "female",
+        "type_voice": "north"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-ps7AbRLII8",
+      "sections": [
+        ["00:00:08", "00:00:24"],
+        ["00:08:16", "00:08:31"]
+      ],
+      "info": {
+        "gender": "female",
+        "type_voice": "north"
+      }
+    },
+    {
+      "url": ": ""
+    }
+  ]
+}

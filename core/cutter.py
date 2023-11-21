@@ -2,15 +2,17 @@ import ffmpeg
 import datetime 
 import os
 from core.log.logger import Logger
+from loguru import logger
 def convert_time(time_string: str):
     time_object = datetime.datetime.strptime(time_string, "%H:%M:%S")
     seconds = time_object.second + time_object.minute * 60 + time_object.hour * 3600
     return seconds
 
 def split(input_path,index_sections ,sections):
-
+    
     is_split = False
-
+    
+    # try:
     for i, section in enumerate(sections):
         start_time = convert_time(section[0])
         end_time = convert_time(section[1])
@@ -25,10 +27,15 @@ def split(input_path,index_sections ,sections):
         # cut video
         ffmpeg.input(input_path, ss=start_time, to=end_time).output(output_name).run(quiet = True, overwrite_output=True)
         is_split = True
-    
+ 
     if is_split:
         if os.path.exists(input_path):
             os.remove(input_path)
             Logger.write_log(f"[Delete] {input_path}")
-    
+    return True
+    '''
+    except:
+        logger.error(f"Error split {sections}")
+        return False
+    '''
 

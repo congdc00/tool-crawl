@@ -139,9 +139,10 @@ def crawl():
                                  
                 del_sections(output_path, index_sections_del) 
                 reindex(output_path, index_sections_root, index_sections_target)
-                split(output_path,index_sections_need_split ,sections_need_split)
-
-                Logger.update_info(video_info["url"], index_sections_del, [index_sections_root, index_sections_target], [index_sections_need_split, sections_need_split])
+                is_done = split(output_path,index_sections_need_split ,sections_need_split)
+                
+                if is_done:
+                    Logger.update_info(video_info["url"], index_sections_del, [index_sections_root, index_sections_target], [index_sections_need_split, sections_need_split])
         
         
     
