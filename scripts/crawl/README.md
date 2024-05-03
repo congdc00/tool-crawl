@@ -7,4 +7,7 @@ Bước 1: Lấy API_KEY tại [Google cloud](https://console.cloud.google.com/a
 Bước 2: Đặt API_KEY vào api_key thư mục `env/config.yaml`
 
 ### 2. Crawl thumb youtube  
-Run `python -m scripts.crawl.thumb_youtube`
+Run 
+```
+python -m scripts.crawl.thumb_youtube
+```
