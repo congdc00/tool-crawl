@@ -1,5 +1,10 @@
 pyyaml
+pythumb
 loguru
 yt-dlp==2023.10.13
 argparse==1.4.0
 ffmpeg-python==0.2.0
+huggingface-hub==0.22.2
+google-api-python-client
+google-auth-oauthlib
+

@@ -1,4 +1,5 @@
 video_source/
+.env
 log/
 !core/log/
 data/
