@@ -45,7 +45,8 @@ if __name__ == "__main__":
                     download_thumb(video_url, subsub_folder_path)
                     
                     historian.add(chanel_id, video_id)
+                    historian.save()
                     num_new_videos += 1
 
-    historian.save()
+    
     logger.success(f"Crawled new {num_new_videos}")
