@@ -5,3 +5,4 @@ log/
 data/
 .mypy_cache/
 __pycache__/
+tmp/

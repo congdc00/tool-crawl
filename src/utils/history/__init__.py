@@ -3,10 +3,13 @@ from loguru import logger
 import json
 import os
 THUMBS_YOUTUBE = "data/history/youtube/thumbs_crawled.json"
+IMAGES_IG = "data/history/instagram/imgs_post.json"
 
 def get_source(mode):
     if mode == "thumbs_youtube":
         return THUMBS_YOUTUBE
+    elif mode == "imgs_ig":
+        return IMAGES_IG
   
     logger.error(f"Don't have mode {mode}")
     return ""

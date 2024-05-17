@@ -1,6 +1,6 @@
 from src.crawl.youtube.videos import get_channel_id, get_videos_id, get_video_url
 from src.crawl.youtube.thumbs import download_thumb
-from src.utils.load_data.youtube import load_chanels
+from src.utils.load_data.youtube import load_info
 from src.utils.history import Historian
 from tqdm import tqdm
 import os
@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     historian = Historian(mode="thumbs_youtube")
     logger.info(f"Load subjects")
-    subjects = load_chanels(SOURCE_CHANELS)
+    subjects = load_info(SOURCE_CHANELS)
     
     # Subject
     num_new_videos = 0

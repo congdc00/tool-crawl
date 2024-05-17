@@ -3,7 +3,7 @@ from tqdm import tqdm
 import time
 
 
-def load_chanels(file_path, type="subject"):
+def load_info(file_path, type="subject"):
     
     with open(file_path, 'r') as file:
         lines = file.readlines()
