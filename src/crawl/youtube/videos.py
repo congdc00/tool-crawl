@@ -70,7 +70,6 @@ def get_videos_id(channel_id):
 
     while True:
         playlist_items_response=youtube_dev.playlistItems().list(
-                    #part='contentDetails',
                     part='snippet',
                     playlistId=playlist_id,
                     maxResults=50,
