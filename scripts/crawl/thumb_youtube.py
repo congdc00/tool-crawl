@@ -9,7 +9,7 @@ from loguru import logger
 import yaml
 
 SAVE_DATA_PATH = "data/output/"
-SOURCE_CHANELS = "data/source/thumb-youtube/sexy_girls.txt"
+SOURCE_CHANELS = "data/source/thumb-youtube/furniture.txt"
 
 
 if __name__ == "__main__":

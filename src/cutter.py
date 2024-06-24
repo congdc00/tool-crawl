@@ -33,9 +33,4 @@ def split(input_path,index_sections ,sections):
             os.remove(input_path)
             Logger.write_log(f"[Delete] {input_path}")
     return True
-    '''
-    except:
-        logger.error(f"Error split {sections}")
-        return False
-    '''
 
